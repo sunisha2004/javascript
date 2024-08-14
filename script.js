@@ -1,9 +1,12 @@
 {
     console.log("numbers from 1 to 10");
+    function num(){
     let i = 0;
     for (i = 1; i <= 10; i++) {
         console.log(`${i}`);
     }
+}
+num();
 }
 
 //sum of numbers
@@ -11,10 +14,14 @@
     console.log("\n\n\n\n\n");
 
     console.log("sum of numbers...");
+    function Add(){
     let sum = 0;
     for (i = 1; i <= 10; i++)
         sum = sum + i;
-    console.log("sum = ", sum);
+    return sum;
+}
+let sum = Add();
+console.log("sum =",sum);
 }
 
 
@@ -22,19 +29,20 @@
 {
     console.log("\n\n\n\n");
     console.log("Even numbers...");
-    letbi = 0;
+    function even(){
+    let i = 0;
     for (i = 1; i <= 10; i++)
         if (i % 2 == 0) {
             console.log(i);
         }
-
+    }
+    even();
 }
 
 //vowels
 {
     console.log("\n\n\n\n\n");
-
-    str = "vowels in a string"
+    fstr = function (str){
     n = 0;
     strlen = str.length
     for (let i = 0; i <= strlen; i++) {
@@ -43,13 +51,18 @@
         }
     }
     console.log("string:", str)
-    console.log(n)
+    return n;
+}
+ str = "vowels in a string"
+ n=fstr(str);
+ console.log(n)
 }
 
 
 //patter1
 {
     console.log("\n\n\n\n\n");
+    function pattern(){
     let str = '';
 
     for (let i = 5; i >= 0; i--) {
@@ -62,10 +75,12 @@
     }
     console.log(str)
 }
+pattern();
+}
 
 //pattern2
-{
-    console.log("\n\n\n\n")
+function printPattern() {
+    console.log("\n\n\n\n");
     console.log("pattern");
 
     let str = '';
@@ -74,31 +89,38 @@
         for (let j = 1; j <= i; j++) {
             str = str + j;
         }
-        str = str + '\n'
+        str = str + '\n';
     }
+
     console.log(str);
 }
 
-//prime number
+printPattern();
 
-{
-    console.log("\n\n\n\n");
-    console.log("prime number");
-    let n = 3;
-    let prime = true;
+
+//prime number
+function isPrime(n) {
     if (n <= 1) {
-        prime = false;
-    } else {
-        for (let i = 2; i < n; i++) {
-            if (n % i === 0) {
-                prime = false;
-                break;
-            }
+        return false;
+    }
+    for (let i = 2; i < n; i++) {
+        if (n % i === 0) {
+            return false;
         }
     }
-    if (prime) {
-        console.log(`${n} is prime number`);
+    return true;
+}
+
+function checkPrime() {
+    console.log("\n\n\n\n");
+    console.log("prime number");
+
+    let n = 3;
+    if (isPrime(n)) {
+        console.log(`${n} is a prime number`);
     } else {
-        console.log(`${n} is not prime number`);
+        console.log(`${n} is not a prime number`);
     }
 }
+
+checkPrime();
