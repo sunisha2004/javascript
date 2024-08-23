@@ -1,0 +1,69 @@
+body {
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h1 {
+    color: #a00;
+    margin-bottom: 20px;
+}
+
+.converter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.converter input, .converter select {
+    padding: 10px;
+    margin: 5px;
+    font-size: 16px;
+}
+
+.output {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.output-box {
+    padding: 20px;
+    margin: 5px;
+    flex: 1;
+    font-size: 18px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+#inputResult {
+    background-color: #007bff;
+}
+
+#outputResult {
+    background-color: #d9534f;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #777;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
