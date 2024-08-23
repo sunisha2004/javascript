@@ -1,0 +1,44 @@
+body {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background-color: #320077;
+    padding: 20px;
+    border-radius: 10px;
+
+}
+
+h1 {
+    font-size: 24px;
+}
+
+input {
+    padding: 10px;
+    margin: 10px 0;
+    width: 200px;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: yellow;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+#ageResult {
+    margin-top: 20px;
+    font-size: 20px;
+}
