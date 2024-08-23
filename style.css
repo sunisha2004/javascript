@@ -1,0 +1,33 @@
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #008CBA;
+    color: white;
+    border-radius: 5px;
+}
+
+
+#bg{
+    margin: auto;
+    background-color: darkgray;
+    color: white;
+    height: 50px;
+    width: 600px;
+    text-align: center;
+    justify-content: center;
+    font-size: 28px;
+    align-content: center;
+
+
+}
+.btd{
+    height: 200px;
+    width: 100px;
+    margin: auto;
+}
+.main{
+    margin-top: 300px;
+}
