@@ -1,0 +1,20 @@
+ body {
+     background-color: white;
+     color: black;
+ }
+
+ body.dark-mode {
+     background-color: black;
+     color: white;
+
+ }
+
+ .toggle_btn {
+     height: 250px;
+     width: 156px;
+     margin: auto;
+ }
+ #toggle{
+    height: 25px;
+    width: 80px;
+ }
